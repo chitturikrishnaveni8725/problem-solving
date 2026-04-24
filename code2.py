@@ -35,28 +35,20 @@ def is_prime(n):
     return True
 
 arr = [7, 4, 7, 23, 10, 6]
-
 result = []
-
 for num in arr:
     if is_prime(num + 1):
         result.append(num)
-
 print(*result)
-            
-
-
-# 3. Write python program 
-#               a   = " aaabbaaccdd"
-#              output: "a5b2c2d2”
-
+# 3. Write python program
+#  a = " aaabbaaccdd"
+# output: "a5b2c2d2”
 a="aaabbaaccdd"
 res=""
 for i in a:
     if i not in res:
         res+=i+str(a.count(i))
 print((res))       
-
 a="aabbccdd"
 dict={}
 for i in a:
